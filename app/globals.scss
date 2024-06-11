@@ -1,0 +1,58 @@
+@use "./css/utils" as u;
+@import url("https://use.typekit.net/ezd8llf.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "trade-gothic-next", sans-serif;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+article {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.gold-glow {
+  text-shadow: u.$gold-400 0 0 8px;
+}
+
+#main-title {
+  font-display: optional;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.body--team {
+  background-color: u.$primary;
+}
+
+.gold-text {
+  background: linear-gradient(
+    to bottom,
+    #cfc09f 27%,
+    #ffecb3 40%,
+    #3a2c0f 78%,
+    #cfc09f 92%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}

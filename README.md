@@ -1,3 +1,0 @@
-# exmedinc
-
-Coming Soon!
