@@ -28,35 +28,7 @@ const Navbar = () => {
             priority={false}
           />
         </Link>
-
-        <div className="md:hidden">
-          <button
-            id="main-menu-button"
-            aria-label="Main Navigation Menu button for mobile"
-            onClick={toggleNavbar}
-          >
-            {isOpen ? (
-              <FontAwesomeIcon
-                icon={faXmark}
-                className="text-gold-500 hover:text-white-100 text-4xl"
-              />
-            ) : (
-              <FontAwesomeIcon
-                icon={faBars}
-                className="text-gold-500 hover:text-white-100 text-4xl"
-              />
-            )}
-          </button>
-        </div>
       </nav>
-
-      {isOpen && (
-        <div className="flex basis-full flex-col items-center md:hidden">
-          <ul className="">
-            <MainLinks />
-          </ul>
-        </div>
-      )}
     </>
   );
 };
