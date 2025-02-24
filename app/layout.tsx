@@ -16,11 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="hide-scrollbar bg-primary">
+      <body className="hide-scrollbar bg-neutral-200">
         <article>
           <Header />
           <main className="relative overflow-hidden min-h-vh">{children}</main>
-          <Footer />
+          {/* <Footer /> */}
         </article>
       </body>
     </html>
