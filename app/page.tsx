@@ -11,7 +11,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="mt-32 mx-auto max-w-md overflow-hidden rounded-xl bg-neutral-200 bg-opacity-90 shadow-md md:max-w-2xl h-1/2 content-center grid grid-cols-1 grid-rows-2 gap-2">
+    <div className="mt-32 mx-auto max-w-md overflow-hidden rounded-xl bg-neutral-200 bg-opacity-90 shadow-md md:max-w-2xl h-1/2 content-center grid grid-cols-1 gap-2">
       <div className="content-center">
         <div className="p-8">
           <div className="text-6xl md:text-8xl font-bold tracking-wide text-sky-600 text-center">
@@ -30,14 +30,12 @@ export default function Home() {
             next!
           </p>
         </div>
-      </div>
-
-      <div className="content-center">
-        <div className="text-neutral-900 text-center md:col-span-2 md:col-start-4 tracking-wide">
-          <div id="contacts" className="text-2xl mt-4 leading-snug font-bold">
-            <p>connect@exmedinc.com</p>
-            <p>800-822-9434</p>
-          </div>
+        <div
+          id="contacts"
+          className="text-2xl pt-4 leading-snug font-bold text-center"
+        >
+          <p>connect@exmedinc.com</p>
+          <p>800-822-9434</p>
         </div>
       </div>
     </div>
